@@ -64,3 +64,6 @@ fbxkb-start &
 alacritty -e btop &
 copyq &
 /usr/bin/syncthing serve --no-browser --logfile=default &
+
+#chezmoi
+chezmoi re-add
