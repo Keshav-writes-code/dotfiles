@@ -19,7 +19,7 @@ xsetroot -solid '#444444'
 # autostart daemons'n'stuff
 #zzzfm -d &
 #devmon &
-leafpad $HERB/help.txt &
+#leafpad $HERB/help.txt &
 xrdb merge ~/.Xresources
 
 # remove all existing keybindings
