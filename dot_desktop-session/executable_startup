@@ -66,4 +66,4 @@ copyq &
 /usr/bin/syncthing serve --no-browser --logfile=default &
 
 #chezmoi
-chezmoi re-add
+chezmoi re-add &
