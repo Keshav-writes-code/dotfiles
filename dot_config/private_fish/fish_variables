@@ -1,5 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export ANDROID_HOME:/home/keshav/Android/Sdk
+SETUVAR --export JAVA_HOME:/opt/android\x2dstudio/jbr
+SETUVAR --export NDK_HOME:/home/keshav/Android/Sdk/ndk/28\x2e0\x2e13004108
 SETUVAR __fish_initialized:3800
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
