@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.2
+Type=Application
+Name=Guitar
+Comment=GUI Client for Git
+Exec=/home/keshav/.local/bin/Guitar-1001631-x86_64.AppImage
+Categories=Development;
+Terminal=false
+StartupWMClass=jetbrains-studio
