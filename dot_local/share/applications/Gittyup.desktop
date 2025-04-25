@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.4
+Type=Application
+Name=Guittyup
+Comment=GUI Client for Git
+Exec=/home/keshav/.local/bin/Gittyup-1.4.0-x86_64.AppImage
+Categories=Development;
+Terminal=false
+StartupWMClass=jetbrains-studio
