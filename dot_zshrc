@@ -104,7 +104,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="$PATH:$HOME/.local/bin"
 eval "$(zoxide init zsh)"
+
+## Neovim
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+## Helix
+export PATH="$PATH:/opt/helix-x86_64-linux"
 
 . "$HOME/.local/share/../bin/env"
 
