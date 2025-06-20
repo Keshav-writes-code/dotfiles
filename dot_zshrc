@@ -102,6 +102,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+if [ -f /usr/bin/fastfetch ]; then
+  fastfetch
+fi
+
+
 export PATH="$PATH:$HOME/.local/bin"
 eval "$(zoxide init zsh)"
 
