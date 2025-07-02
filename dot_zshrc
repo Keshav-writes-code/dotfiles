@@ -132,3 +132,7 @@ export PATH="$HOME/.config/emacs/bin:$PATH"
 
 # Android Platform Tools
 export PATH="$HOME/Android/Sdk/platform-tools/:$PATH"
+
+if [ -f /usr/bin/fastfetch ]; then
+  fastfetch
+fi
