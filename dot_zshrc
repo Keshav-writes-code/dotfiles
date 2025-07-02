@@ -102,11 +102,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-if [ -f /usr/bin/fastfetch ]; then
-  fastfetch
-fi
-
-
 export PATH="$PATH:$HOME/.local/bin"
 eval "$(zoxide init zsh)"
 
@@ -131,3 +126,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Chezmoi
 export PATH="$HOME/bin:$PATH"
+
+# Emacs
+export PATH="$HOME/.config/emacs/bin:$PATH"
+
+# Android Platform Tools
+export PATH="$HOME/Android/Sdk/platform-tools/:$PATH"

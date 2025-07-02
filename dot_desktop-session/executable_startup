@@ -1,15 +1,15 @@
 #!/bin/bash
 
 ## Only use ONE (or neither)
-## Simple script to check for connectivity (NCA). 
+## Simple script to check for connectivity (NCA).
 ## If no network connection is detected, activate wi-fi networks, open connman and go straight to the wi-fi connections tab.
 network-check-antix &
 ## OR More comples tool (NCR) that provides on screen info while waiting for a network connection to be established.
-## NRS reports in both GUI and non-GUI environments. 
+## NRS reports in both GUI and non-GUI environments.
 #network-readiness-state &
 
 ## Puts connman gui monitor icon on the taskbar
-#cmst -m & 
+#cmst -m &
 xset r rate 250 30 &
 ## Uncomment if using pulseaudio (you need to install it). Make sure it starts before volumeicon.
 #pulseaudio -D &
@@ -19,7 +19,7 @@ xset r rate 250 30 &
 pipewire &
 
 ## Puts a volume icon on the taskbar
-sleep 5 && volumeicon & 
+sleep 5 && volumeicon &
 
 ## Enable/Disable automounting
 automount-antix &
@@ -47,7 +47,7 @@ fbxkb-start &
 #grep -q "START_DAEMON=no" /etc/default/wicd || wicd-client -t &
 
 ## Uncomment after installing apt-notifier
-#apt-notifier & 
+#apt-notifier &
 
 ## Enable Mouse Configuration at Startup
 #ds-mouse -all &
@@ -55,13 +55,12 @@ fbxkb-start &
 ## Uncomment if using network-manager  (you need to install it)
 #nm-applet &
 
-
 ## Used on live system only
 
 ## Some Customized Apps
 /usr/bin/thorium-browser &
 /opt/Obsidian/obsidian &
-alacritty -e btop &
+alacritty -e sudo btop &
 copyq &
 /usr/bin/syncthing serve --no-browser --logfile=default &
 
