@@ -1,0 +1,10 @@
+geometry 9x1-160+0
+max_geometry 0x1-500+0
+grow_gravity NE
+icon_gravity NE
+decorations none
+background "#000000"
+icon_size 16
+sticky true
+skip_taskbar false
+window_layer top
