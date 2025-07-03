@@ -6,5 +6,5 @@ decorations none
 background "#000000"
 icon_size 16
 sticky true
-skip_taskbar false
+skip_taskbar true
 window_layer top
