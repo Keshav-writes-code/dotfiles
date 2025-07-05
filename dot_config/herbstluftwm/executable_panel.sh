@@ -189,7 +189,5 @@ hc pad $monitor $panel_height
   -e "button3=;button4=exec:$hc_quoted use_index -1;button5=exec:$hc_quoted use_index +1" \
   -ta l -bg "$bgcolor" -fg '#efefef'
 
-trayer --edge top --align right --margin 0 --distance 0
-
-# sleep 2 &&
-# stalonetray &
+sleep 2 &&
+  stalonetray &
