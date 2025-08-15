@@ -125,7 +125,7 @@ OpaqueResize=1 # 0/1
 # HideTitleBarWhenMaximized=0 # 0/1
 
 #  Center large windows
-# CenterLarge=0 # 0/1
+CenterLarge=1 # 0/1
 
 #  Center dialogs on owner window
 # CenterTransientsOnOwner=1 # 0/1
