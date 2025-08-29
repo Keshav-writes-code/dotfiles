@@ -69,3 +69,5 @@ chezmoi re-add &
 
 # Start easyeffects in pseudo-daemonised mode
 easyeffects --gapplication-service
+
+picom &
