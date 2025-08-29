@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=QView
+Exec=/home/keshav/.local/bin/qView-7.1-x86_64.AppImage %f
+Icon=/home/keshav/.local/share/icons/hicolor/128x128/apps/com.interversehq.qView.png
+Categories=Graphics;Viewer;
