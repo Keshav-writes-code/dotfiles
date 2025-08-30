@@ -1,0 +1,18 @@
+{
+  "examDataEntry": {
+    "prefix": "examdata",
+    "body": [
+      "{",
+      "  subject_short_name: \"${1:dbms}\",",
+      "  year_released: ${2:2023},",
+      "  semester: ${3:4},",
+      "  course_name: 'cse with aiml',",
+      "  degree_name: 'b.tech',",
+      "  college_short_name: 'acear',",
+      "  google_drive_link: \"${7:https://drive.google.com/file/d/1sRFF89X0_lxlViOZPwc8S8BWZ08mxN1J/view?usp=sharing}\",",
+      "  exam_type_id: ${8:1},",
+      "},"
+    ],
+    "description": "Insert exam data entry structure"
+  }
+}
