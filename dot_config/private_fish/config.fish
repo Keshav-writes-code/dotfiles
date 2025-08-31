@@ -21,3 +21,7 @@ function y
     end
     rm -f -- "$tmp"
 end
+set -gx VENV_HOME "$HOME/.virtualenvs"
+if not test -d $VENV_HOME
+    mkdir $VENV_HOME
+end

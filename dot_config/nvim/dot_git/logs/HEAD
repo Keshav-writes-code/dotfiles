@@ -4,3 +4,4 @@ d370e0334d4f8674603d79408571ead0bbd75643 a5ac421f4813d99291bc37a11d8967a61d0ee41
 a5ac421f4813d99291bc37a11d8967a61d0ee41d 68f8071a8c5db77ae74eaa84d22a36e7f1264b27 Keshav <95571677+Keshav-writes-code@users.noreply.github.com> 1753297595 +0530	commit: feat: add clangd tooling
 68f8071a8c5db77ae74eaa84d22a36e7f1264b27 593c90ffd90c062a063cd5ccba02d22382988606 Keshav <95571677+Keshav-writes-code@users.noreply.github.com> 1753297626 +0530	commit: refac: use the lazygit extras package for smear cursor instead of mannualy way
 593c90ffd90c062a063cd5ccba02d22382988606 779d8cffeee42395ebd7c5144d5926bffb42aa75 Keshav <95571677+Keshav-writes-code@users.noreply.github.com> 1753297635 +0530	commit: feat: add auto format on save
+779d8cffeee42395ebd7c5144d5926bffb42aa75 44fbc2974d15f66991dbe602ceaba1ddf41f9e66 Keshav <95571677+Keshav-writes-code@users.noreply.github.com> 1756535822 +0530	commit: feat: add yazi as the main file explorer
