@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Nemo
+Comment=Access and organize files
+Exec=nemo %U
+Icon=nemo
+Terminal=false
+Type=Application
+Categories=Utility;Core;GTK;FileManager;
+MimeType=inode/directory;
+StartupNotify=true
+X-GNOME-Autostart-enabled=false
