@@ -30,6 +30,7 @@ x-scheme-handler/about=thorium-browser.desktop
 x-scheme-handler/unknown=thorium-browser.desktop
 video/x-matroska=mpv.desktop
 video/mp4=mpv.desktop
+inode/directory=nemo.desktop
 
 [Added Associations]
 video/x-matroska=mpv.desktop;
