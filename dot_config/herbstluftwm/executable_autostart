@@ -77,7 +77,7 @@ hc keybind $Mod-Control-Up resize up +$resizestep
 hc keybind $Mod-Control-Right resize right +$resizestep
 
 # Open apps
-hc keybind $Mod-Return spawn alacritty
+hc keybind $Mod-Return spawn wezterm
 hc keybind $Mod-d spawn rofi -modi drun -show drun
 hc keybind $Mod-n spawn thorium-browser
 hc keybind $Mod-y spawn seamonkey
