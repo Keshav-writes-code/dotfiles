@@ -31,9 +31,11 @@ x-scheme-handler/unknown=thorium-browser.desktop
 video/x-matroska=mpv.desktop
 video/mp4=mpv.desktop
 inode/directory=nemo.desktop
+audio/x-opus+ogg=audacious.desktop
 
 [Added Associations]
 video/x-matroska=mpv.desktop;
 video/mp4=mpv.desktop;
 image/jpeg=userapp-qView-7.1-x86_64.AppImage-J9KHC3.desktop;your-image-viewer.desktop;
 image/png=qview.desktop;
+audio/x-opus+ogg=mpv.desktop;audacious.desktop;
