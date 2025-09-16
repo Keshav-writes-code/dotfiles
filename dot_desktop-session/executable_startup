@@ -58,6 +58,7 @@ fbxkb-start &
 ## Used on live system only
 
 ## Some Customized Apps
+/usr/bin/variety &
 /usr/bin/stalonetray &
 /usr/bin/thorium-browser &
 /opt/Obsidian/obsidian &
