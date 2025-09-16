@@ -58,6 +58,7 @@ fbxkb-start &
 ## Used on live system only
 
 ## Some Customized Apps
+/usr/bin/stalonetray &
 /usr/bin/thorium-browser &
 /opt/Obsidian/obsidian &
 alacritty -e sudo btop &
@@ -69,5 +70,3 @@ chezmoi re-add &
 
 # Start easyeffects in pseudo-daemonised mode
 easyeffects --gapplication-service
-
-picom &
