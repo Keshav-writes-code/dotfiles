@@ -65,7 +65,8 @@ fbxkb-start &
 alacritty -e sudo btop &
 copyq &
 /usr/bin/syncthing serve --no-browser --logfile=default &
-
+polybar &
+picom &
 #chezmoi
 chezmoi re-add &
 
