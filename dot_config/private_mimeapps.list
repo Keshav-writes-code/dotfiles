@@ -1,5 +1,5 @@
 [Default Applications]
-image/jpeg=your-image-viewer.desktop
+image/jpeg=qview.desktop
 image/png=qview.desktop
 image/bmp=mirage.desktop;
 audio/mpeg=xmms.desktop;
@@ -37,6 +37,6 @@ x-scheme-handler/mailto=thorium-browser.desktop
 [Added Associations]
 video/x-matroska=mpv.desktop;
 video/mp4=mpv.desktop;
-image/jpeg=userapp-qView-7.1-x86_64.AppImage-J9KHC3.desktop;your-image-viewer.desktop;
+image/jpeg=userapp-qView-7.1-x86_64.AppImage-J9KHC3.desktop;your-image-viewer.desktop;qview.desktop;
 image/png=qview.desktop;
 audio/x-opus+ogg=mpv.desktop;audacious.desktop;
