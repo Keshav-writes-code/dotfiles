@@ -144,13 +144,13 @@ hc set frame_border_active_color '#222222cc'
 hc set frame_border_normal_color '#101010cc'
 hc set frame_bg_normal_color '#565656aa'
 hc set frame_bg_active_color '#345F0Caa'
-hc set frame_border_width 1
+hc set frame_border_width 0
 hc set always_show_frame off
 hc set frame_bg_transparent on
 hc set frame_transparent_width 0
 hc set frame_gap 0
 
-hc attr theme.title_height 15
+hc attr theme.title_height 0
 hc attr theme.title_font 'Dejavu Sans:pixelsize=12' # example using Xft
 # hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
 hc attr theme.padding_top 0 # space below the title's baseline (i.e. text depth)
