@@ -109,6 +109,7 @@ hc keybind $Mod-period use_index +1 --skip-visible
 hc keybind $Mod-comma use_index -1 --skip-visible
 
 # layouting
+hc set default_frame_layout 0
 hc keybind $Mod-r remove
 hc keybind $Mod-s floating toggle
 hc keybind $Mod-f fullscreen toggle
