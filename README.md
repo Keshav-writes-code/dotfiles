@@ -3,6 +3,7 @@
 An Ultra Minimal Sub 500 MB Ram usage, 10 GB Disk space required Full on beautiful Desktop Environment
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/49853839-1899-4835-9fca-aeead26874ec" />
+<img width="1920" height="1080" alt="2025-09-26-203121_1920x1080_scrot" src="https://github.com/user-attachments/assets/74b9a87d-373e-4a96-a4e5-8fd8ee712907" />
 
 ## Software Specs
 
