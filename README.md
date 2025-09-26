@@ -15,7 +15,8 @@ An Ultra Minimal Sub 500 MB Ram usage, 10 GB Disk space required Full on beautif
 | Visual Effects (Blur, etc) | [Picom](https://github.com/yshui/picom)            |
 | Code Editor                | [Lazyvim](https://www.lazyvim.org/)                |
 | Terminal                   | [Alacritty](https://alacritty.org/index.html)      |
-| Browser                    | [Thorium](https://thorium.rocks/)                  |
+| Shell                      | [Fish](https://fishshell.com/)                     |
+| App Picker                 | [Rofi](https://davatorium.github.io/rofi/)         |
 
 ## Resource Usage
 
@@ -32,3 +33,4 @@ An Ultra Minimal Sub 500 MB Ram usage, 10 GB Disk space required Full on beautif
 | CPU         | Intel i5-10400F  |
 | GPU         | Nvidia GT 710    |
 | Motherboard | Gigabyte H410 v2 |
+| Monitor     | Gigabyte H410 v2 |
