@@ -33,6 +33,7 @@ video/mp4=mpv.desktop
 inode/directory=nemo.desktop
 audio/x-opus+ogg=audacious.desktop
 x-scheme-handler/mailto=thorium-browser.desktop
+image/gif=mpv.desktop
 
 [Added Associations]
 video/x-matroska=mpv.desktop;
@@ -40,3 +41,4 @@ video/mp4=mpv.desktop;
 image/jpeg=userapp-qView-7.1-x86_64.AppImage-J9KHC3.desktop;your-image-viewer.desktop;qview.desktop;
 image/png=qview.desktop;
 audio/x-opus+ogg=mpv.desktop;audacious.desktop;
+image/gif=mpv.desktop;
