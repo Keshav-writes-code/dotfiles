@@ -9,7 +9,7 @@ audio/flac=xmms.desktop;
 application/x-shellscript=geany.desktop;
 application/pgp-encrypted=geany.desktop;
 application/x-iwork-keynote-sffkey=geany.desktop;
-text/plain=leafpad.desktop;
+text/plain=vim.tiny.desktop
 image/x-xpixmap=mirage.desktop;
 video/x-msvideo=mpv.desktop;
 text/vnd.trolltech.linguist=mpv.desktop;
@@ -34,6 +34,9 @@ inode/directory=nemo.desktop
 audio/x-opus+ogg=audacious.desktop
 x-scheme-handler/mailto=thorium-browser.desktop
 image/gif=mpv.desktop
+x-scheme-handler/discord-492484203435393035=discord-492484203435393035.desktop
+audio/x-wavpack=mpv.desktop
+audio/x-wav=mpv.desktop
 
 [Added Associations]
 video/x-matroska=mpv.desktop;
@@ -42,3 +45,6 @@ image/jpeg=userapp-qView-7.1-x86_64.AppImage-J9KHC3.desktop;your-image-viewer.de
 image/png=qview.desktop;
 audio/x-opus+ogg=mpv.desktop;audacious.desktop;
 image/gif=mpv.desktop;
+audio/x-wavpack=mpv.desktop;
+audio/x-wav=mpv.desktop;
+text/plain=vim.tiny.desktop;
