@@ -7,23 +7,24 @@ An Ultra Minimal Sub 500 MB Ram usage, 10 GB Disk space required Full on beautif
 
 ## How to Install
 
-- on Fresh System
-  in a fresh system which doesn't have chezmoi installed yet
+### On fresh system
 
-  to clone eveything, run this command.
+in a fresh system which doesn't have chezmoi installed yet
 
-  ```sh
-  sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply Keshav-writes-code
-  ```
+to clone eveything, run this command.
 
-   to clone a speicific config, change the `[dir_name]` part in this command
+```sh
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply Keshav-writes-code
+```
 
-  ```sh
-  sh -c "$(curl -fsLS get.chezmoi.io)" -- init Keshav-writes-code && \
-    chezmoi apply [dir_name] # example [dir_name] : ~/.config/nvim
-  ```
+to clone a speicific config, change the `[dir_name]` part in this command
 
-- on System with Chezmoi already installed
+```sh
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init Keshav-writes-code && \
+  chezmoi apply [dir_name] # example [dir_name] : ~/.config/nvim
+```
+
+### On system with Chezmoi installed
 
 ```sh
 chezmoi init --apply Keshav-writes-code
