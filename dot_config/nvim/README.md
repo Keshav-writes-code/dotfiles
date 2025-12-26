@@ -1,25 +1,4 @@
-# Installation
-### Install Neovim
-Debian (zsh)
-```shell
-sudo apt install curl &&
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
-sudo rm -rf /opt/nvim
-sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
-echo 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"' >> ~/.zshrc
-source ~/.zshrc
-```
-Debian (Bash)
-```shell
-sudo apt install curl &&
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
-sudo rm -rf /opt/nvim
-sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
-echo 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"' >> ~/.bashrc
-source ~/.bashrc
-```
-### Install Configuration
-```shell
-mv ~/.config/nvim{,.bak}
-git clone https://github.com/Keshav-writes-code/nvim.git ~/.config/nvim
-```
+# 💤 LazyVim
+
+A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
