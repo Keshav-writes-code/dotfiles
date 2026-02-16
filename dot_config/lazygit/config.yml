@@ -2,13 +2,13 @@ gui:
   sidePanelWidth: 0.4 # gives you more space to show things side-by-side
 git:
   pagers:
-    - colorArg: never
-      pager: ydiff -p cat -s --wrap --width={{columnWidth}}
+    - colorArg: always
+      pager: delta --side-by-side --paging=never
 customCommands:
   - key: <c-a>
     description: Pick AI commit
     command: |
-      aichat "Please suggest 2 commit messages, given the following diff:
+      gemini "Please suggest 2 commit messages, given the following diff:
 
         \`\`\`diff
         $(git diff --cached)
@@ -71,7 +71,7 @@ customCommands:
         for your best commit, not the best average commit. It's better to cover more
         scenarios than include a lot of overlap.
 
-        Write your 2 commit messages below in the format shown in Output Template section above." \
+        Write your 10 commit messages below in the format shown in Output Template section above." --model "gemini-3-flash-preview" 2> /dev/null \
           | fzf --height 40% --border --ansi --preview "echo {}" --preview-window=up:wrap \
           | xargs -I {} bash -c '
               COMMIT_MSG_FILE=$(mktemp)
