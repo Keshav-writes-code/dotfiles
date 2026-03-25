@@ -25,3 +25,6 @@ set -gx VENV_HOME "$HOME/.virtualenvs"
 if not test -d $VENV_HOME
     mkdir $VENV_HOME
 end
+
+# opencode
+fish_add_path /home/keshav/.opencode/bin
