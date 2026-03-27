@@ -14,13 +14,13 @@ in a fresh system which doesn't have chezmoi installed yet
 to clone eveything, run this command.
 
 ```sh
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply Keshav-writes-code
+sudo sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /usr/local/bin init --apply Keshav-writes-code
 ```
 
 to clone a speicific config, change the `[dir_name]` part in this command
 
 ```sh
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init Keshav-writes-code && \
+sudo sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /usr/local/bin init Keshav-writes-code && \
   chezmoi apply [dir_name] # example [dir_name] : ~/.config/nvim
 ```
 
