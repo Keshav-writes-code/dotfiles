@@ -6,6 +6,13 @@
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Input
+
+workspace "Result"
+workspace "Code"
+workspace "Browser"
+workspace "Notes"
+workspace "Monitor"
+
 prefer-no-csd
 input {
     keyboard {
@@ -621,6 +628,7 @@ binds {
     Print { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
+    Alt+v { spawn "sh" "-c" "cliphist-fuzzel-img"; }
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
@@ -647,3 +655,6 @@ spawn-at-startup "/usr/libexec/xdg-desktop-portal"
 spawn-at-startup "pipewire"
 spawn-at-startup "wireplumber"
 spawn-at-startup "pipewire-pulse"
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+// Optional: Add this line if you also want to save middle-click highlight copies
+spawn-at-startup "wl-paste" "-p" "--watch" "cliphist" "store"
