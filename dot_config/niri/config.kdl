@@ -13,6 +13,34 @@ workspace "Browser"
 workspace "Notes"
 workspace "Monitor"
 
+
+window-rule {
+  match app-id="thorium-browser" at-startup=true
+  open-on-workspace "Browser"
+}
+
+window-rule {
+  match app-id="obsidian" at-startup=true
+  open-on-workspace "Notes"
+}
+
+window-rule {
+  match title="btop" at-startup=true
+  open-on-workspace "Monitor"
+}
+
+spawn-at-startup "/usr/libexec/xdg-desktop-portal-gtk"
+spawn-at-startup "/usr/libexec/xdg-desktop-portal"
+spawn-at-startup "/home/keshav/.config/niri/start-audio.sh"
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+// Optional: Add this line if you also want to save middle-click highlight copies
+spawn-at-startup "wl-paste" "-p" "--watch" "cliphist" "store"
+
+
+spawn-sh-at-startup "thorium-browser --enable-features=UseOzonePlatform --ozone-platform=wayland"
+spawn-at-startup "obsidian"
+spawn-at-startup "alacritty" "-t" "btop" "-e" "sudo" "btop"
+
 prefer-no-csd
 input {
     keyboard {
@@ -340,10 +368,6 @@ window-rule {
     open-floating true
 }
 
-window-rule{
-    geometry-corner-radius 12
-    clip-to-geometry true
-}
 
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
@@ -359,7 +383,7 @@ window-rule{
 
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
-/-window-rule {
+window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }
@@ -650,11 +674,3 @@ binds {
     Mod+Shift+T { spawn "sudo" "poweroff"; }
 }
 
-spawn-at-startup "/usr/libexec/xdg-desktop-portal-gtk"
-spawn-at-startup "/usr/libexec/xdg-desktop-portal"
-spawn-at-startup "pipewire"
-spawn-at-startup "wireplumber"
-spawn-at-startup "pipewire-pulse"
-spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
-// Optional: Add this line if you also want to save middle-click highlight copies
-spawn-at-startup "wl-paste" "-p" "--watch" "cliphist" "store"
