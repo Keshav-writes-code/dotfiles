@@ -35,11 +35,14 @@ spawn-at-startup "/home/keshav/.config/niri/start-audio.sh"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 // Optional: Add this line if you also want to save middle-click highlight copies
 spawn-at-startup "wl-paste" "-p" "--watch" "cliphist" "store"
+spawn-at-startup "qs" "-c" "noctalia-shell"
 
 
 spawn-sh-at-startup "thorium-browser --enable-features=UseOzonePlatform --ozone-platform=wayland"
 spawn-at-startup "obsidian"
 spawn-at-startup "alacritty" "-t" "btop" "-e" "sudo" "btop"
+
+
 
 prefer-no-csd
 input {
