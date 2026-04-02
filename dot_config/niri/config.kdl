@@ -7,26 +7,26 @@
 // Find the full list of options on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Input
 
-workspace "Result"
-workspace "Code"
-workspace "Browser"
-workspace "Notes"
-workspace "Monitor"
+workspace "1"
+workspace "2"
+workspace "3"
+workspace "4"
+workspace "5"
 
 
 window-rule {
   match app-id="thorium-browser" at-startup=true
-  open-on-workspace "Browser"
+  open-on-workspace "3"
 }
 
 window-rule {
   match app-id="obsidian" at-startup=true
-  open-on-workspace "Notes"
+  open-on-workspace "4"
 }
 
 window-rule {
   match title="btop" at-startup=true
-  open-on-workspace "Monitor"
+  open-on-workspace "5"
 }
 spawn-at-startup "/usr/libexec/xdg-desktop-portal-gtk"
 spawn-at-startup "/usr/libexec/xdg-desktop-portal"
@@ -310,8 +310,6 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
-// This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "ashell"
 
 spawn-at-startup "swww-daemon"
 spawn-sh-at-startup "swww img ~/Pictures/Favorites/photo-1663208846258-ac737c0e7276.jpg"
