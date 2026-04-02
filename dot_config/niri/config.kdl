@@ -32,16 +32,16 @@ window-rule {
 spawn-at-startup "/usr/libexec/xdg-desktop-portal-gtk"
 spawn-at-startup "/usr/libexec/xdg-desktop-portal"
 spawn-at-startup "pipewire"
-spawn-sh-at-startup "sleep 1 && wireplumber"
-spawn-sh-at-startup "sleep 2 && pipewire-pulse"
+spawn-sh-at-startup "sleep 1 && exec wireplumber"
+spawn-sh-at-startup "sleep 2 && exec pipewire-pulse"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 // Optional: Add this line if you also want to save middle-click highlight copies
 spawn-at-startup "wl-paste" "-p" "--watch" "cliphist" "store"
 
 // spawn-at-startup "oxidebar"
-spawn-at-startup "sleep 3 && ashell"
+spawn-sh-at-startup "sleep 3 && exec ashell"
 spawn-at-startup "alacritty" "-t" "btop" "-e" "sudo" "btop"
-spawn-sh-at-startup "thorium-browser --enable-features=UseOzonePlatform --ozone-platform=wayland"
+spawn-at-startup "thorium-browser" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland"
 spawn-at-startup "obsidian"
 
 spawn-sh-at-startup r#"while true; do killall wbg 2>/dev/null; wbg -s "$(find ~/Pictures/Wallpapers/ -type f | shuf -n 1)" & sleep 300; done"#
