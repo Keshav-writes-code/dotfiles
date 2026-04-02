@@ -34,7 +34,7 @@ alert_threshold = 80
 sensor = "acpitz temp1"
 
 [tempo]
-clock_format = "%a | %d %b | %R"
+clock_format = "%a | %d %b | %l:%M %p"
 # formats = [ "%a %d %b %R", "%Y-%m-%d %H:%M:%S", "%H:%M:%S" ]
 # timezones = [ "UTC", "America/New_York", "Europe/London" ]
 weather_location = { City = "Ambala" }
