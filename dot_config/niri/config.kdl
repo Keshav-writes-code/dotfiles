@@ -29,23 +29,27 @@ window-rule {
   open-on-workspace "5"
 }
 
+// XDG Portal Init
 spawn-at-startup "/usr/libexec/xdg-desktop-portal-gtk"
 spawn-at-startup "/usr/libexec/xdg-desktop-portal"
+
+// Audio Init
 spawn-at-startup "pipewire"
 spawn-sh-at-startup "sleep 1 && exec wireplumber"
 spawn-sh-at-startup "sleep 2 && exec pipewire-pulse"
+
+// CLipboard
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
-// Optional: Add this line if you also want to save middle-click highlight copies
 spawn-at-startup "wl-paste" "-p" "--watch" "cliphist" "store"
 
+// Apps on Startup
 // spawn-at-startup "oxidebar"
 spawn-sh-at-startup "sleep 3 && exec ashell"
 spawn-at-startup "alacritty" "-t" "btop" "-e" "sudo" "btop"
 spawn-at-startup "thorium-browser" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland"
 spawn-at-startup "obsidian"
-
-spawn-sh-at-startup r#"while true; do killall wbg 2>/dev/null; wbg -s "$(find ~/Pictures/Wallpapers/ -type f | shuf -n 1)" & sleep 300; done"#
-
+spawn-at-startup "awww-daemon"
+spawn-at-startup "~/.config/niri/awww_randomize.sh" " ~/Pictures/Wallpapers/"
 
 prefer-no-csd
 input {
