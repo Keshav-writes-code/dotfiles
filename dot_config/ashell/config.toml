@@ -68,7 +68,11 @@ tooltip = "Toggle On-Screen Keyboard"
 [appearance]
 style = "Islands"
 
+primary_color = "#7aa2f7"
+success_color = "#9ece6a"
 text_color = "#a9b1d6"
+workspace_colors = [ "#7aa2f7", "#9ece6a" ]
+special_workspace_colors = [ "#7aa2f7", "#9ece6a" ]
 
 [appearance.danger_color]
 base = "#f7768e"
