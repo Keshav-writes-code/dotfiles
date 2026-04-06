@@ -5,7 +5,7 @@ position = "Top"
 [modules]
 left = [ [ "appLauncher", "Workspaces"], "MediaPlayer" ]
 center = [ "WindowTitle" ]
-right = [ "SystemInfo", [ "Tray", "Tempo", "Privacy", "Settings" ] ]
+right = [ "SystemInfo", [ "Tray", "Tempo", "Privacy"  ], "Settings" ]
 
 [workspaces]
 visibility_mode = "All"
