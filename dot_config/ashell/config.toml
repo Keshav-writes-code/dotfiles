@@ -1,4 +1,6 @@
 log_level = "warn"
+layer = "Overlay"
+
 #outputs = { Targets = ["eDP-1"] }
 position = "Top"
 
