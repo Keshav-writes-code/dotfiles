@@ -29,6 +29,11 @@ window-rule {
   open-on-workspace "5"
 }
 
+window-rule {
+  match app-id="foot"
+  default-column-width { proportion 0.6; }
+}
+
 // XDG Portal Init
 spawn-at-startup "/usr/libexec/xdg-desktop-portal-gtk"
 spawn-at-startup "/usr/libexec/xdg-desktop-portal"
@@ -48,6 +53,7 @@ spawn-at-startup "thorium-browser" "--enable-features=UseOzonePlatform" "--ozone
 spawn-at-startup "obsidian"
 spawn-at-startup "awww-daemon" "--no-cache"
 spawn-at-startup "~/.config/niri/awww_randomize.sh"
+spawn-at-startup "foot" "-T" "btop" "-t" "btop" "btop"
 
 prefer-no-csd
 input {
