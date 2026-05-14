@@ -35,8 +35,6 @@ spawn-at-startup "/usr/libexec/xdg-desktop-portal"
 
 // Audio Init
 spawn-at-startup "pipewire"
-spawn-sh-at-startup "sleep 1 && exec wireplumber"
-spawn-sh-at-startup "sleep 2 && exec pipewire-pulse"
 
 // CLipboard
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
