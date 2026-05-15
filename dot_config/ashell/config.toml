@@ -69,7 +69,7 @@ tooltip = "Toggle On-Screen Keyboard"
 
 [appearance]
 style = "Islands"
-
+opacity = 0.8
 primary_color = "#7aa2f7"
 success_color = "#9ece6a"
 text_color = "#a9b1d6"
