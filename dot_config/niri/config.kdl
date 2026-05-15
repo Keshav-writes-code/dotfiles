@@ -35,6 +35,23 @@ window-rule {
   default-column-width { proportion 0.6; }
 }
 
+// Enable blur behind the foot terminal.
+window-rule {
+    match app-id="foot"
+    background-effect {
+        blur true
+    }
+}
+
+// Enable blur behind the fuzzel launcher.
+layer-rule {
+    match namespace="^launcher$"
+
+    background-effect {
+        blur true
+    }
+}
+
 // XDG Portal Init
 spawn-at-startup "/usr/libexec/xdg-desktop-portal-gtk"
 spawn-at-startup "/usr/libexec/xdg-desktop-portal"
