@@ -27,6 +27,7 @@ window-rule {
 window-rule {
   match title="btop" at-startup=true
   open-on-workspace "5"
+  open-maximized true
 }
 
 window-rule {
