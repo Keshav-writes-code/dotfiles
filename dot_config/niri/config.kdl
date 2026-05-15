@@ -39,16 +39,12 @@ window-rule {
 spawn-at-startup "/usr/libexec/xdg-desktop-portal-gtk"
 spawn-at-startup "/usr/libexec/xdg-desktop-portal"
 
-// Audio Init
-spawn-at-startup "pipewire"
-
 // CLipboard
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "wl-paste" "-p" "--watch" "cliphist" "store"
 
 // Apps on Startup
 // spawn-at-startup "oxidebar"
-spawn-sh-at-startup "sleep 3 && exec ashell"
 spawn-at-startup "alacritty" "-t" "btop" "-e" "sudo" "btop"
 spawn-at-startup "thorium-browser" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland"
 spawn-at-startup "obsidian"
