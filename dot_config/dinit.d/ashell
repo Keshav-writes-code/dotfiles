@@ -1,3 +1,4 @@
 type = process
-command = /usr/local/bin/ashell
+command =sh -c "sleep 1 && exec ashell"
 depends-on = pipewire
+logfile = /home/keshav/.local/state/ashell.log
