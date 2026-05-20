@@ -2,6 +2,10 @@ inherits = "tokyonight_moon"
 
 # Override the main editor background
 "ui.background" = { fg = "foreground"  }
+
+[palette]
+bg-selection = "#5a5f7c"
+
 #
 # # Change the cursor to be white with black text
 # "ui.cursor" = { fg = "black", bg = "white" }
