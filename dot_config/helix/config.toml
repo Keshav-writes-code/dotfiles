@@ -1,4 +1,5 @@
 theme = "tokyonight_moon_mod"
+
 [keys.normal.space]
 "-" = [
   ':sh rm -f /tmp/unique-file',
@@ -17,3 +18,15 @@ g = [
 ]
 [editor]
 line-number = 'relative'
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 0
+wrap-indicator = ""  # set wrap-indicator to "" to hide it
+
