@@ -1,4 +1,4 @@
-theme = "base16_default"
+theme = "tokyonight_moon_mod"
 [keys.normal.space]
 "-" = [
   ':sh rm -f /tmp/unique-file',

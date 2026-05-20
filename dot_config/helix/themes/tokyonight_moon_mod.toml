@@ -1,0 +1,15 @@
+inherits = "tokyonight_moon"
+
+# Override the main editor background
+"ui.background" = { fg = "foreground"  }
+#
+# # Change the cursor to be white with black text
+# "ui.cursor" = { fg = "black", bg = "white" }
+#
+# # Make all keywords bold and red
+# "keyword" = { fg = "#ff0000", modifiers = ["bold"] }
+#
+# # You can also define your own custom colors in a palette
+# [palette]
+# my_special_blue = "#0055ff"
+# "ui.linenr.selected" = { fg = "my_special_blue", modifiers = ["bold"] }
