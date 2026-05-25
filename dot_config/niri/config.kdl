@@ -34,6 +34,9 @@ window-rule {
   match app-id="foot"
   default-column-width { proportion 0.6; }
 }
+window-rule {
+    draw-border-with-background false
+}
 
 // Enable blur behind the foot terminal.
 window-rule {
@@ -43,6 +46,20 @@ window-rule {
     }
 }
 
+window-rule {
+    match app-id="wofi"
+    background-effect {
+        blur true
+        xray false
+    }
+    focus-ring{
+        off
+    }
+    border {
+        off
+    }
+
+}
 // Enable blur behind the fuzzel launcher.
 layer-rule {
     match namespace="^launcher$"
@@ -52,6 +69,13 @@ layer-rule {
     }
 }
 
+layer-rule {
+    match namespace="^wofi$"
+
+    background-effect {
+        blur true
+    }
+}
 // XDG Portal Init
 spawn-at-startup "/usr/libexec/xdg-desktop-portal-gtk"
 spawn-at-startup "/usr/libexec/xdg-desktop-portal"
@@ -453,7 +477,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
-    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "wofi" "--show" "drun" "-n"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
