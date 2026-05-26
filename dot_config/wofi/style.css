@@ -1,0 +1,51 @@
+window {
+    margin: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(20, 20, 20, 0.5); /* Adjust the 0.5 for more or less transparency */
+    border-radius: 12px;
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 14px;
+}
+
+#input {
+    margin: 15px;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+#inner-box, #outer-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px 15px 15px 15px;
+    border: none;
+    background-color: transparent;
+}
+
+#entry {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+#text {
+    margin-left: 8px;
+    border: none;
+    color: #e0e0e0;
+}
+
+#entry:selected {
+    background-color: rgba(255, 255, 255, 0.12);
+    outline: none;
+}
+
+#entry:selected #text {
+    font-weight: bold;
+    color: #ffffff;
+}

@@ -1,0 +1,14 @@
+[config]
+show=drun
+prompt=Search...
+width=500
+height=400
+allow_markup=true
+allow_images=true
+image_size=24
+term=alacritty
+hide_scroll=true
+no_actions=true
+halign=fill
+orientation=vertical
+content_halign=fill
