@@ -19,6 +19,7 @@ g = [
 [editor]
 line-number = 'relative'
 end-of-line-diagnostics = "hint"
+bufferline = 'always'
 
 [editor.inline-diagnostics]
 cursor-line = "warning"
