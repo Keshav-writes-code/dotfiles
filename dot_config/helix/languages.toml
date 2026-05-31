@@ -17,5 +17,11 @@ auto-format = true
 
 [[language]]
 name = "typescript"
-language-servers = ["biome"]
+# Use Biome for formatting and the typescript-language-server for other LSP features
+language-servers = [
+  { name = "typescript-language-server", except-features = [ "format" ] },
+  "biome"
+]
 auto-format = true
+# Ensure Helix detects the project root correctly
+roots = ["biome.json", "biome.jsonc", "package.json"]
