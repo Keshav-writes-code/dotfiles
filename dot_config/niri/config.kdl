@@ -104,8 +104,6 @@ spawn-at-startup "wl-paste" "-p" "--watch" "cliphist" "store"
 spawn-at-startup "alacritty" "-t" "btop" "-e" "sudo" "btop"
 spawn-at-startup "thorium-browser" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland"
 spawn-at-startup "obsidian"
-spawn-at-startup "awww-daemon" "--no-cache"
-spawn-at-startup "~/.config/niri/awww_randomize.sh"
 spawn-at-startup "foot" "-T" "btop" "-t" "btop" "btop"
 
 prefer-no-csd
