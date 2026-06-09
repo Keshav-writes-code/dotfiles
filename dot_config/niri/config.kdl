@@ -61,6 +61,12 @@ window-rule {
     }
 
 }
+
+// Dim inactive windows
+window-rule {
+    match is-active=false
+    opacity 0.9
+}
 // Enable blur behind the fuzzel launcher.
 layer-rule {
     match namespace="^launcher$"
