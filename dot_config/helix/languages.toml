@@ -32,4 +32,13 @@ language-servers = [
 auto-format = true
 roots = ["biome.json", "biome.jsonc", "package.json"]
 
+[[language]]
+name = "astro"
+scope = "source.astro"
+injection-regex = "astro"
+file-types = ["astro"]
+language-servers = ["astro-ls"]
+formatter = { command = "prettier", args = ["--plugin", "prettier-plugin-astro", "--parser", "astro"] }
+auto-format = true
+
 
