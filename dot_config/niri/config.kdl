@@ -5,22 +5,23 @@
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Input
-workspace "1"
-workspace "2"
-workspace "3"
-workspace "4"
-workspace "5"
+workspace "Testing"
+workspace "Code"
+workspace "Browser"
+workspace "Notes"
+workspace "Monitor"
+workspace "Music"
 window-rule {
     match app-id="thorium-browser" at-startup=true
-    open-on-workspace "3"
+    open-on-workspace "Browser"
 }
 window-rule {
     match app-id="obsidian" at-startup=true
-    open-on-workspace "4"
+    open-on-workspace "Notes"
 }
 window-rule {
     match title="btop" at-startup=true
-    open-on-workspace "5"
+    open-on-workspace "Monitor"
     open-maximized true
 }
 window-rule {
