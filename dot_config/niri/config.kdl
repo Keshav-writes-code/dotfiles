@@ -951,3 +951,7 @@ binds {
     }
 }
 
+cursor {
+    xcursor-theme "Bibata-Modern-Classic"
+    xcursor-size 20
+}
